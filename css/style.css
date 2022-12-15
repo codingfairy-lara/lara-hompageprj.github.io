@@ -1,0 +1,417 @@
+body {
+    color : rgb(70, 70, 70);
+    background-color : rgb(243, 238, 232);
+    width: 1024px;
+    margin: 80px auto;
+    font-family: 'Gowun Batang', 'GangwonEduAll', 'Times New Roman', 'Noto Serif KR', serif;
+    display: block;
+    align-items: center;
+}
+a {
+    color:rgb(70, 70, 70);
+    text-decoration: none;
+    margin: 1%;
+}
+.body-shadow {
+    box-shadow: 2px 2px 10px 1px rgba(128, 128, 128, 0.425);
+}
+#header{
+    color : rgb(70, 70, 70);
+    background-color : rgb(255, 255, 255);
+    width: 1024px;
+    height: 60px;
+    /* font-family: 'Times New Roman'; */
+    font-size: 16px;
+    font-weight: bold;
+    display: grid;
+    text-align: center;
+}
+#header-upperLine, #footer-upperLine {
+    width: 1024px;
+    height: 5px;
+    background-color : rgb(42, 42, 42);
+}
+#container {
+    color : rgb(70, 70, 70);
+    background-color : rgb(255, 255, 255);
+    width: 1024px;
+    display: block;
+    position: relative;
+    overflow:auto; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+/* Flashing */
+#main_imgs {
+    display: flex;
+}
+.mainImgs {
+    width: 336px;
+    margin: 2px auto;
+}
+.mainImgs:hover img{
+    filter: brightness(1.08)
+}
+
+/* .hover13 figure:hover img {
+    opacity: 1;
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+  } */
+
+.column_left {
+    float: left;
+    width: 590px;
+    padding: 20px;
+}
+.column_right {
+    float: right;
+    width: 310px;
+    height: 900px;
+    padding: 20px;
+    margin: 50px 40px 50px 0px;
+    background-color: rgba(159, 147, 129, 0.224);
+}
+.column_fix_wrap1 {
+    position: relative;
+    width: 600px;
+    background-color: rgb(255, 255, 255);
+    margin: 60px 0px auto;
+}
+.account_fix_wrap {
+    position: relative;
+    width: 200px;
+    /* background-color: rgba(159, 147, 129, 0.224); */
+    margin: 0px auto;
+}
+.content_img {
+    width: 159px;
+    height: 244px;
+    float: left;
+    margin: 1px 1px;
+}
+.content_text {
+    width: 140px;
+    height: 200px;
+    float: right;
+    margin: 10px 10px;
+}
+h1 {
+    color: rgb(63, 63, 63);
+    font-size: 42px;
+}
+h2 {
+    color: rgb(63, 63, 63);
+    font-size: 26px;
+}
+h3 {
+    color: rgb(63, 63, 63);
+    text-align: left;
+}
+p {
+    color: rgba(82, 82, 82, 0.537);
+    text-align: left;
+    font-size: 14px;
+}
+#tbl-userList {
+    border: 1px solid black; 
+    padding: 15px;
+    text-align: center;
+}
+
+#first_content {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(184, 184, 184, 0.472);
+    width: 330px;
+    height: 250px;
+    margin: 30px auto;
+}
+#second_content {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(184, 184, 184, 0.472);
+    width: 330px;
+    height: 250px;
+    margin: 30px auto;
+}
+#third_content {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(184, 184, 184, 0.472);
+    width: 330px;
+    height: 250px;
+    margin: 30px auto;
+}
+#account {
+    width: 210px;
+    height: 300px;
+    background-color: rgba(159, 147, 129, 0.224);
+    margin: 30px auto;
+}
+#account2 {
+    width: 300px;
+    height: 460px;
+    background-color: rgba(159, 147, 129, 0.224);
+    position:relative;
+    left: -25%;
+}
+#login_wrap {
+    display: flex;
+    width: 200px;
+    height: 300px;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(79, 79, 79);
+}
+#create_account_wrap {
+    display: flex;
+    height: 460px;
+    justify-content: center;
+    flex-direction: column;
+    color: rgb(79, 79, 79);
+}
+#labels {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#labels2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+#resister-box {
+    width: 290px;
+}
+input {
+    margin: 1.5px auto;
+    width: 90px;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    background: linear-gradient(rgba(0, 0, 0, 0.571),rgba(108, 108, 108, 0.519)) center bottom 5px /calc(100% - 10px) 2px no-repeat;
+    border: 0px;
+    padding: 8px;
+    
+}
+input.create_account {
+    width: 120px;
+}
+button {
+    position: relative;
+    border: none;
+    display: inline-block;
+    padding: 12px 23px;
+    border-radius: 15px;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.25s;
+    margin: 20px;
+    background-color: #a3a1a1;
+    color: #e3dede;
+}
+button:hover {
+    letter-spacing: 2px;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+button#btn_login {
+    background-color: #b19595d2;
+}
+button#btn_submit {
+    display: inline-block;
+    background-color: #988989cf;
+    color: #e3dede;
+    width: 180px;
+}
+button#btn_userList {
+    display: flex;
+    justify-content: center;
+    color: #e3dede;
+    width: 180px;
+    margin: 0px auto;
+}
+
+#footer {
+    color : rgb(70, 70, 70);
+    background-color : rgb(255, 255, 255);
+    padding-top: 10%;
+    width: 1024px;
+    overflow: auto; 
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+#footer-box {
+    width: 1024px;
+    height: 80px;
+    margin: 10px 0px auto;
+    position: relative;
+    background-color: #edededa9;
+}
+#footer-box p {
+    width: 1024px;
+    height: 50px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    text-align: center;
+    margin-left:-512px;
+    margin-top:-12px;
+}
+
+/* about Lara */
+#introduction {
+    width: 1024px;
+    background-color: rgba(255, 255, 255, 0.735);
+    overflow: hidden;
+}
+#favorite_box {
+    /* display: flex; */
+    width: 900px;
+    height: 460px;
+    /* float: left; */
+    /* justify-content: center; */
+    /* flex-direction: row; */
+}
+.favorite_container {
+    width: 2160px;
+    /* transform: translate(-30px); */
+    transition: transform 0.25s;
+    /* position: absolute; */
+}
+.favorite_inner {
+    width: 280px;
+    height: 393px;
+    margin: 0px 2px auto;
+    padding: 1.5%;
+    border: 1px dotted #ddd;;
+    float: left;
+}
+.favorite_inner img {
+    width: 240px;
+}
+.favorite_container div:first-child {
+    margin-left: -10px;
+}
+#slide_controller {
+    position: absolute;
+    transform: translate(410px);
+}
+#btn_prev, #btn_next {
+    background-color: #b19595d2;
+    font-weight: 1000;
+}
+#roadmap_box {
+    display: inline-block;
+    width: 850px;
+}
+
+#roadmap_box iframe {
+    width: 850px;
+    height: 2300px;
+    border-radius: 15px;
+}
+.icons {
+    width: 80px;
+}
+#contact_info_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_info img{
+    float: left;
+}
+.contact_info p{
+    margin-top: 25%;
+    float: left;
+}
+#contact_info_tbl table {
+    table-layout: fixed;
+}
+#music_player {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#iPod {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+    width: 450px;
+    height: 550px;
+    box-shadow: 2px 3px 35px 5px rgba(129, 129, 129, 0.733) inset;
+}
+#iPod_display {
+    border: 5px solid rgb(107, 107, 107);
+    border-radius: 8px;
+    width: 380px;
+    height: 220px;
+    margin-top: 7.9%;
+    margin-left: 7%;
+}
+#iPod_display iframe {
+    width: 380px;
+    height: 220px;
+    border-radius: 3px;
+}
+#iPod_console img{
+    width: 230px;
+    margin-top: 4.9%;
+}
+#iPod_console button{
+    position:absolute;
+    background-color: #ffffff00;
+    box-shadow: 0px 0px 0px 0px;
+    width: 50px;
+    height: 30px;
+    font-weight: 600;
+    font-size: 14px;
+}
+#btn_pause {
+    transform: translate(-160px, 198px);
+}
+#btn_prevMusic {
+    transform: translate(-247px, 102px);
+}
+#btn_nextMusic {
+    transform: translate(-73px, 102px);
+}
+#btn_shuffle {
+    color: #a3a1a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin: 0px;
+    transform: translate(170px, -205px);
+}
+#btn_loop {
+    color: #a3a1a1;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin: 0px;
+    transform: translate(235px, -205px);
+}
+#btn_mute {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin: 0px;
+    transform: translate(200px, -138px);
+}
+
+
+@font-face {
+    font-family: 'GangwonEduAll';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.eot?#iefix') format('embedded-opentype'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.woff2') format('woff2'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.woff') format('woff'),
+         url('https://cdn.jsdelivr.net/gh/webfontworld/gangwon/GangwonEduAllLight.ttf') format("truetype");
+    font-display: swap;
+} 

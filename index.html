@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=Nanum+Myeongjo:wght@400;700;800&family=Nanum+Pen+Script&family=Open+Sans:wght@300;400;500;600&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="./js/main.js"></script>
+    <script>
+        if(localStorage) {
+            console.log('localStorage를 사용가능합니다.', localStorage);
+        }
+        if(sessionStorage) {
+            
+            console.log('localStorage를 사용가능합니다.', sessionStorage);
+        }
+        // load이벤트 핸들러
+        window.addEventListener('load', () => {
+            renderUserList();
+        });
+    </script>
+
+</head>
+<body class="body-shadow">
+    <div id="header" role="banner">
+        <div id="header-upperLine"></div>
+        <ol id="grid">
+            <a href="index.html">Home</a>
+            <a href="about_me.html">About Hera</a>
+            <a href="music.html">Music Player</a>
+            <a href="road_map.html">Roadmap</a>
+            <a href="contact.html">Contact</a>
+        </ol>
+    </div>
+    <div id="container" role="main">
+        <div id="img_tap" style="width: 1024px; margin: 0px auto; position: relative;">
+        <div id="main_imgs">
+            <div id="main img1" class="mainImgs">
+                <img src="./images/zeze2.jpeg" alt="" style="width: 336px;  height: 336px;">
+            </div>
+            <div id="main img2" class="mainImgs">
+                <img src="./images/warmbeige.JPG" alt="" style="width: 336px; height: 336px;">
+            </div>
+            <div id="main img3" class="mainImgs">
+                <img src="./images/home.jpeg" alt="" style="width: 336px; height: 336px;">
+            </div>
+        </div>
+        <h1>Hera's Home Page</h1>
+        <div id="main_left" class="column_left">
+            <div class="column_fix_wrap1">
+                <div id="first_content">
+                    <div id="first_content_img" class="content_img">
+                        <img src="./images/content1.JPG" alt="" style="width: 163px;  height: 248px;">
+                    </div>
+                    <div id="first_content_box" class="content_text">
+                        <h3>Omg So cute!</h3>
+                        <p>Super cute Zeze wearing a teddy bear outfit! You're so precious to me.🤍 <br> I really want to hug you, little cutie. <br> I love you so much!</p>
+                    </div>
+                </div>
+                <div id="second_content">
+                    <div id="second_content_img" class="content_img">
+                        <img src="./images/content3.jpeg" alt="" style="width: 163px;  height: 248px;">
+                    </div>
+                    <div id="second_content_box" class="content_text">
+                        <h3>Who's this?</h3>
+                        <p>Are you a doggie or a bunny? 🐰 <br> I'm really confused, but I'm clearly sure you're the most adorable creature whichever you are.</p>
+                    </div>
+                </div>
+                <div id="third_content">
+                    <div id="third_content_img" class="content_img">
+                        <img src="./images/pasta.jpeg" alt="" style="width: 163px;  height: 248px;">
+                    </div>
+                    <div id="third_content_box" class="content_text">
+                        <h3>Great meal❤︎</h3>
+                        <p>It is delicious meat-ball pasta🍝 I had for dinner last weekend. It was a very satisfying meal, and I had a nice time with the friends.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="main_right" class="column_right">
+            <div class="account_fix_wrap">
+                <div id="account" class="log-in">
+                    <div id="login_wrap">
+                        <h2>Sign In</h2>
+                        <div id="labels">
+                            <label for="username_login">ID : <input type="text" id="username_login" required></label>
+                            <label for="password_login">Password : <input type="password" id="password_login" required></label>
+                        </div>
+                        <button id="btn_login">SIGN IN</button>
+                    </div>
+                </div>
+                <br>
+                <div id="account2" class="create_account">
+                    <div id="create_account_wrap">
+                        <form action="javascript:createAccount();" name="createAccountFrm">
+                            <!-- action="javascript:createUserList()" -->
+                            <div id="resister-box">
+                                <h2>Sign Up</h2>
+                                <div id="labels2">
+                                    <label for="userId">ID : <input type="text" name="userId" id="userId" class="create_account" required>
+                                    </label> 
+                                    <label for="password">Password : <input type="password" name="password" id="password"  class="create_account" required></label> 
+                                    <label for="password2">Retype password : <input type="password" id="pwdCheck" class="create_account" required></label> 
+                                    <label for="userName">Username : <input type="text" name="userName" id="userName" class="create_account" required>
+                                    </label> 
+                                    <label for="email">E-mail : <input type="email" name="email" id="email" class="create_account" required></label> 
+                                </div>
+                            </div>
+                            <button id="btn_submit">SUBMIT</button>
+                        </form>
+                        <button id="btn_userList" onclick="popupList()">USER LIST</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="footer" role="contentinfo">
+        <div id="footer-box">
+            <p align=center> * - Hera Jang home page project - * </p>
+        </div>
+        <div id="footer-upperLine"></div>
+    </div>
+    
+</body>
+
+</html>
